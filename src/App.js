@@ -13,7 +13,12 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element=<SidebarLayout ><FilmWrap/></SidebarLayout>/>
+          <Route path="/" element=<SidebarLayout ><iframe
+                src="https://chatapp-git-main-antaras-projects.vercel.app/"
+                height="300"
+                width="450"
+                title="Chat Widget"
+              ></iframe><FilmWrap/></SidebarLayout>/>
           <Route path="/films" element=<SidebarLayout ><FilmWrap/></SidebarLayout>/>
           <Route path="/people" element=<SidebarLayout ><PeopleWrap/></SidebarLayout>/>
           <Route path="/planets" element=<SidebarLayout ><PlanetsWrap/></SidebarLayout>/>
